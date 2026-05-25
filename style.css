@@ -18,12 +18,12 @@ section{padding:7rem 2rem}
 .narrow{max-width:760px}
 .dark{background:#111}
 h2{font-size:clamp(2.6rem,5vw,4rem);margin:0 0 2rem}
-.works-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2rem}
-article{background:#171717;padding:1.4rem;transition:transform .25s ease}
-article:hover{transform:translateY(-5px)}
-.cover{aspect-ratio:1/1;background:linear-gradient(135deg,#37322d,#0f0f0f);margin-bottom:1rem}
-article h3{font-size:1.7rem;margin:.4rem 0 0}
-article p{opacity:.68;margin:.2rem 0}
+.album-embed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;align-items:start}
+.album-embed-card{background:#151515;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:1rem;transition:transform .25s ease, border-color .25s ease}
+.album-embed-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.18)}
+.album-caption{padding:.4rem .25rem 0}
+.album-caption h3{font-size:1.65rem;margin:.6rem 0 0}
+.album-caption p{opacity:.65;margin:0}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
 .gallery img{width:100%;height:100%;object-fit:cover;display:block}
 .discography{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.8rem 2rem}
@@ -31,4 +31,4 @@ article p{opacity:.68;margin:.2rem 0}
 .release span{opacity:.55;min-width:48px}
 .mail{font-size:1.25rem}
 footer{text-align:center;padding:4rem 2rem;opacity:.5}
-@media(max-width:700px){section{padding:5rem 1.25rem}.hero-content{padding:2rem}nav{justify-content:flex-start}}
+@media(max-width:700px){section{padding:5rem 1.25rem}.hero-content{padding:2rem}nav{justify-content:flex-start}.album-embed-grid{grid-template-columns:1fr}}
